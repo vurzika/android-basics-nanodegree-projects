@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">New Parents Baby Challenge</string>
+    <string name="label_mom">Mom</string>
+    <string name="label_dad">Dad</string>
+    <string name="label_feeding">Feeding\n+1 Point</string>
+    <string name="label_nap">Nap\n+3 Points</string>
+    <string name="label_change_diaper">Change diaper\n+5 Points</string>
+    <string name="label_start_new_day">Start New Day</string>
+</resources>

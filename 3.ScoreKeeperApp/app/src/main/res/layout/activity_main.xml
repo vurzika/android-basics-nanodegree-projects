@@ -1,0 +1,195 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Section With Score -->
+
+        <!-- Using relative layout to scale
+             and fit image behind score table -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:padding="70dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/android_baby" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:fontFamily="@font/chango"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="@string/label_mom"
+                        android:textAppearance="?android:textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/mom_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_bottom_number"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/roboto_black"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:textColor="#000000"
+                        android:textSize="56sp"
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:fontFamily="@font/chango"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="@string/label_dad"
+                        android:textAppearance="?android:textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/dad_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_bottom_number"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/roboto_black"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:textColor="#000000"
+                        android:textSize="56sp"
+                        android:text="0"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- Player Buttons -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginLeft="@dimen/margin_side"
+                    android:layout_marginRight="@dimen/margin_side"
+                    android:drawableLeft="@drawable/feeding_bottle"
+                    android:onClick="addOneToMom"
+                    android:text="@string/label_feeding" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginLeft="@dimen/margin_side"
+                    android:layout_marginRight="@dimen/margin_side"
+                    android:drawableLeft="@drawable/nap"
+                    android:onClick="addThreeToMom"
+                    android:text="@string/label_nap" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_side"
+                    android:layout_marginRight="@dimen/margin_side"
+                    android:drawableLeft="@drawable/diaper"
+                    android:onClick="addFiveToMom"
+                    android:text="@string/label_change_diaper" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginLeft="@dimen/margin_side"
+                    android:layout_marginRight="@dimen/margin_side"
+                    android:drawableLeft="@drawable/feeding_bottle"
+                    android:onClick="addOneToDad"
+                    android:text="@string/label_feeding" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginLeft="@dimen/margin_side"
+                    android:layout_marginRight="@dimen/margin_side"
+                    android:drawableLeft="@drawable/nap"
+                    android:onClick="addThreeToDad"
+                    android:text="@string/label_nap" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_side"
+                    android:layout_marginRight="@dimen/margin_side"
+                    android:drawableLeft="@drawable/diaper"
+                    android:onClick="addFiveToDad"
+                    android:text="@string/label_change_diaper" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Bottom Button -->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="setScoreToZero"
+            android:text="@string/label_start_new_day"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

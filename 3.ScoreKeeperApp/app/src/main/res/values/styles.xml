@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+
+        <!-- Primary Theme Color -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- Custom Buttons Style in Theme -->
+        <item name="colorButtonNormal">#90b62e</item>
+        <item name="android:buttonStyle">@style/ButtonColor</item>
+
+        <item name="android:colorBackground">@android:color/white</item>
+    </style>
+
+    <!-- Base button style -->
+    <style name="ButtonColor" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/roboto_black</item>
+    </style>
+
+</resources>
+
