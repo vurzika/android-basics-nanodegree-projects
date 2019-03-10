@@ -79,5 +79,5 @@ lint/outputs/
 lint/tmp/
 # lint/reports/
 
-#MacOS
+# MacOS
 .DS_Store

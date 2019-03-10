@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Udacity</string>
+    <string name="learn_think_do">Learn. Think. Do.</string>
+    <string name="company_name">Udacity Inc.</string>
+    <string name="company_phone">(650) 938–9090</string>
+    <string name="company_website">https://www.udacity.com</string>
+    <string name="company_address">2465 Latham St Mountain View, CA</string>
+</resources>
