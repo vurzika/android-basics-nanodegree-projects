@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Greeting Card</string>
+    <string name="greetings_from_karl_the_fog">Greetings from Karl The Fog</string>
+    <string name="welcome_to_the_city">Welcome to the City</string>
+</resources>
