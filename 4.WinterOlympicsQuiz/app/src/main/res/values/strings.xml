@@ -1,0 +1,49 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Winter Olympics Quiz</string>
+
+    <string name="question_first">Where were the first modern Olympic Winter Games held?</string>
+    <string name="answer_salt_lake_city">Salt Lake City, UT</string>
+    <string name="answer_moscow">Moscow, Russia</string>
+    <string name="answer_chamonix">Chamonix, France</string>
+    <string name="answer_stockholm">Stockholm, Sweden</string>
+
+    <string name="question_second">The VIII Olympic Winter Games saw the inclusion of which new women\'s competition?</string>
+    <string name="answer_figure_skating">Figure Skating</string>
+    <string name="answer_ski_jumping">Ski jumping</string>
+    <string name="answer_speed_skating">Speed Skating</string>
+    <string name="answer_bobsled">Bobsled</string>
+
+    <string name="question_third">What is the only indoor Winter Olympics sport that does not involve ice skates?</string>
+    <string name="placeholder_name_of_the_sport">Name of the sport</string>
+
+    <string name="question_fourth">What country has won both the most gold medals, and the most medals overall in the Winter Olympic Games?</string>
+    <string name="answer_united_states">United States</string>
+    <string name="answer_norway">Norway</string>
+    <string name="answer_canada">Canada</string>
+    <string name="answer_sweden">Sweden</string>
+
+    <string name="question_fifth">What are the only two countries south of the equator to win medals at the Winter Olympics Games?</string>
+    <string name="answer_south_africa">South Africa</string>
+    <string name="answer_australia">Australia</string>
+    <string name="answer_new_zealand">New Zealand</string>
+    <string name="answer_argentina">Argentina</string>
+
+    <string name="question_sixth">Which Olympic team was the subject of a 1993 Disney comedy?</string>
+    <string name="answer_the_japanese_baseball_team">The Japanese baseball team</string>
+    <string name="answer_the_jamaican_bobsled_team">The Jamaican bobsled team</string>
+    <string name="answer_the_danish_gymnastics_team">The Danish gymnastics team</string>
+    <string name="answer_the_russian_synchronized_swimming_team">The Russian synchronized swimming team</string>
+
+    <string name="question_seventh">What was the first Canadian city to host the Winter Olympics?</string>
+    <string name="answer_calgary">Calgary</string>
+    <string name="answer_montreal">Montreal</string>
+    <string name="answer_edmonton">Edmonton</string>
+    <string name="answer_ottawa">Ottawa</string>
+    <string name="answer_submit">Submit</string>
+
+    <string name="message_result_bad">Unfortunately your score is <xliff:g id="score" example="0">%d</xliff:g></string>
+    <string name="message_result_better">You can do better. You have <xliff:g id="score" example="2">%d</xliff:g> point(s)</string>
+    <string name="message_result_good">Almost there. You have <xliff:g id="score" example="5">%d</xliff:g> points</string>
+    <string name="message_result_perfect">Congratulations, you have perfect score - <xliff:g id="score" example="7">%d</xliff:g> points!</string>
+</resources>
+
