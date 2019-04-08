@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="progress_bar_height">5dp</dimen>
+    <dimen name="list_item_height">90dp</dimen>
+    <dimen name="grid_item_spacing">8dp</dimen>
+    <dimen name="button_details_size">180dp</dimen>
+    <dimen name="list_item_offset_left">16dp</dimen>
+    <dimen name="grid_item_height">250dp</dimen>
+</resources>

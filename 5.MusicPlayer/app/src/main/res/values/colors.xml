@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#fbc02d</color>
+    <color name="primaryDarkColor">#c49000</color>
+    <color name="secondaryDarkColor">#000051</color>
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColor">#000000</color>
+    <color name="colorCellBackground">#AA000000</color>
+
+    <color name="colorCellText">#FFFFFF</color>
+</resources>
