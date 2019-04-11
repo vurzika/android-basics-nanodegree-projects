@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#fa5c18</color>
+    <color name="primaryDarkColor">#E64A19</color>
+
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="colorCellBackground">#55000000</color>
+
+    <!-- Background color for the Nature and Parks category -->
+    <color name="category_nature_and_parks">#289900</color>
+
+    <!-- Background color for the Sights and Landmarks category -->
+    <color name="category_sights_and_landmarks">#ba7daf</color>
+
+    <!-- Background color for the Museums category -->
+    <color name="category_museums">#680894</color>
+
+    <!-- Background color for the Shopping category -->
+    <color name="category_shopping">#009dd2</color>
+
+    <color name="colorCellText">#FFFFFF</color>
+</resources>

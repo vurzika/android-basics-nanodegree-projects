@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height">
+
+    <ImageView
+        android:id="@+id/sight_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/golden_gate_park" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/colorCellBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/point_of_interest_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/colorCellText"
+            android:textStyle="bold"
+            tools:text="Victorian Houses" />
+
+    </LinearLayout>
+</RelativeLayout>

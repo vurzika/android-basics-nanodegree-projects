@@ -1,0 +1,113 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Tour Guide</string>
+
+    <!-- Category name for Nature and Parks [CHAR LIMIT=20] -->
+    <string name="category_nature_and_parks">Nature and Parks</string>
+
+    <!-- Category name for Sights and Landmarks [CHAR LIMIT=20] -->
+    <string name="category_sights_and_landmarks">Sights and Landmarks</string>
+
+    <!-- Category name for Museums [CHAR LIMIT=20] -->
+    <string name="category_museums">Museums</string>
+
+    <!-- Category name for Shopping [CHAR LIMIT=20] -->
+    <string name="category_shopping">Shopping</string>
+
+    <!-- Title for details activity -->
+    <string name="title_activity_sight_details">Sight Details</string>
+
+    <!-- Data -->
+    <string name="golden_gate_park">Golden Gate Park</string>
+    <string name="description_golden_gate_park">Golden Gate Park is the third most visited park in the United States. While the park is free to visit during the day, popular attractions charge admission, such as deYoung Museum, California Academy of Sciences and Conservatory of Flowers. The park is filled with gardens, museums, art, flowers, trees, lakes, birds and wildlife. There are also plenty of opportunities to participate in sports, clubs and other activities.</string>
+    <string name="website_golden_gate_park">https://goldengatepark.com/</string>
+    <string name="address_golden_gate_park">501 Stanyan St, San Francisco, CA 94117</string>
+    <string name="phone_golden_gate_park">(415) 831–2700</string>
+
+    <string name="muir_woods">Muir Woods</string>
+    <string name="description_muir_woods">People do not just visit Muir Woods. They come from around the globe to pay homage to nature in this cathedral of redwoods. The trees ages range from 400 to 800 years, their height up to 250 feet. Flat easy trails loop through the groves. Muir Woods National Monument was established on January 9, 1908 when President Roosevelt signed legislation to protect an old-growth coast redwood forest from destruction.In the light gaps beneath the redwood trees are red alders, California big leaf maples, tanoaks, and Douglas fir. The forest floor is covered in redwood sorrel, ferns, fungi, duff, and debris. Several bridges cross Redwood Creek, which flows through the park year-round. Wildlife residents include the endangered coho salmon fingerlings, Pacific wren, woodpeckers, owls, deer, chipmunks, skunks, river otters, and squirrels to name a few.</string>
+    <string name="website_muir_woods">http://www.visitmuirwoods.com//</string>
+    <string name="address_muir_woods">Mill Valley, CA 94941</string>
+    <string name="phone_muir_woods">(415) 388–7059</string>
+
+    <string name="yosemite_national_park">Yosemite National Park</string>
+    <string name="description_yosemite">Yosemite National Park, created in 1890, is one of the oldest nature preserves in the United States. A wonderland of geological formations and biological diversity, the park spans nearly 1,200 square miles on the western slope of the Sierra Nevada range in central eastern California. More than 3 million visitors each year flock to see Yosemite’s grandeur. It was designated as a UNESCO World Heritage Site in 1984.</string>
+    <string name="website_yosemite">https://www.yosemite.com/</string>
+    <string name="address_yosemite">Tuolumne, Mariposa and Madera counties, CA 95389</string>
+    <string name="phone_yosemite">(209) 372–0200</string>
+
+
+    <string name="monterey">Monterey</string>
+    <string name="description_monterey">Monterey is a scenic California coastal city that rises from the pristine Monterey Bay to pine forested hillsides with sweeping bay views. The city\'s natural beauty and historic sites make it a premier tourist destination. Think picnics on gorgeous, uncrowded beaches, fabulous seafood restaurants, and great hotels overlooking beautiful Monterey Bay… Monterey is a great place for a romantic getaway. Nature buffs can explore the bay by kayak for a close-up look at sea lions, seals and otters.</string>
+    <string name="website_monterey">https://monterey.org/</string>
+    <string name="address_monterey">Monterey County, CA</string>
+    <string name="phone_monterey">(831) 646–3799</string>
+
+    <string name="alcatraz_island">Alcatraz Island</string>
+    <string name="description_alcatraz_island">Alcatraz Island offers a close-up look at the site of the first lighthouse and US built fort on the West Coast, the infamous federal penitentiary long off-limits to the public, and the history making 18 month occupation by Indians of All Tribes. Rich in history, there is also a natural side to the Rock—gardens, tide pools, bird colonies, and bay views beyond compare.</string>
+    <string name="website_alcatraz_island">https://www.nps.gov/alca/index.htm</string>
+    <string name="address_alcatraz_island">San Francisco Bay, CA 94122</string>
+    <string name="phone_alcatraz_island">(415) 981–7625</string>
+
+    <string name="golden_gate_bridge">Golden Gate Bridge</string>
+    <string name="description_golden_gate_bridge">The Golden Gate Bridge is a spectacular sight which can be seen from many areas around San Francisco. The Golden Gate is at its most enchanting in the morning when the bridge is often shrouded in mist. But the bridge is also alluring at night when the lighting makes it seem as if the spires of the towers dissolve in the darkness.</string>
+    <string name="website_golden_gate_bridge">http://goldengate.org/</string>
+    <string name="address_golden_gate_bridge">Presidio Station, San Francisco, CA 94129</string>
+    <string name="phone_golden_gate_bridge">(415) 921–5858</string>
+
+    <string name="pier_39">Pier 39</string>
+    <string name="description_pier_39">PIER 39 is a 45-acre waterfront complex that is a gathering place for millions of San Francisco locals and visitors. In addition to its 13 full-service restaurants, 90+ shops and popular attractions, PIER 39 is home to a 5-acre waterfront park and a 300-berth marina. PIER 39 is known for its spectacular views of San Francisco Bay including the Golden Gate Bridge, Bay Bridge and Alcatraz, as well as the world famous California sea lions hauled out on K-Dock.</string>
+    <string name="website_pier_39">https://www.pier39.com/</string>
+    <string name="address_pier_39">Beach Street and The Embarcadero San Francisco, CA 94133</string>
+    <string name="phone_pier_39">(415) 705–5500</string>
+
+    <string name="lombard_street">Lombard Street</string>
+    <string name="description_lombard_street">Lombard Street is one of the most unique of the vertically endowed roads and is a great stop to add to any itinerary. It is one of America’s crookedest streets. Some of San Francisco’s most expensive real estate sits on Lombard Street. This Russian Hill neighborhood possesses stately mansions even with the endless array of tourists pouring down the street every day. In the spring and through the entire summer, Lombard Street is alive with color, as the many beautiful flowers are in bloom.</string>
+    <string name="website_lombard_street">https://www.sftodo.com/sanfrancisco/crooked-street-lombard/</string>
+    <string name="address_lombard_street"> 1070 Lombard Street, San Francisco, California 94109</string>
+    <string name="phone_lombard_street">(415) 391–2000 </string>
+
+    <string name="twin_peaks">Twin Peaks</string>
+    <string name="description_twin_peaks">At 922 feet in elevation, Twin Peaks is second only to Mt. Davidson in height, offers spectacular views of the Bay Area, and is a world-famous tourist attraction. Originally called “Los Pechos de la Choca” (Breasts of the Maiden) by early Spanish settlers, these two adjacent peaks provide postcard views and a treasure trove of animal and plant diversity. Most visitors to Twin Peaks drive (or take a tourist bus) to the north peak parking lot to enjoy 180-degree views of the Bay Area.</string>
+    <string name="website_twin_peaks">http://sfrecpark.org/destination/twin-peaks/</string>
+    <string name="address_twin_peaks"> 501 Twin Peaks Blvd, San Francisco, CA 94114</string>
+    <string name="phone_twin_peaks">(415) 831–2700</string>
+
+    <string name="california_academy_of_sciences">California Academy of Sciences</string>
+    <string name="description_california_academy_of_sciences">The California Academy of Sciences is a renowned scientific and educational institution dedicated to exploring, explaining, and sustaining life on Earth. Based in San Francisco’s Golden Gate Park, it is home to a world-class aquarium, planetarium, and natural history museum—all under one living roof.</string>
+    <string name="website_california_academy_of_sciences">https://www.calacademy.org/</string>
+    <string name="address_california_academy_of_sciences">55 Music Concourse Dr, San Francisco, CA 94118</string>
+    <string name="phone_california_academy_of_sciences">(415) 379–8000</string>
+
+    <string name="de_young_museum">de Young Museum</string>
+    <string name="description_de_young_museum">Founded in 1895 in San Francisco’s Golden Gate Park, the de Young Museum has been an integral part of the cultural fabric of the city and a cherished destination for millions of residents and visitors to the region for over 100 years. On October 15, 2005, the de Young Museum re-opened in a state-of-the-art new facility that integrates art, architecture and the natural landscape in one multi-faceted destination that will inspire audiences from around the world. Designed by the renowned Swiss architecture, the new de Young provided San Francisco with a landmark art museum to showcase the museum’s priceless collections of American art from the 17th through the 20th centuries, Textile arts, and art of Africa, Oceania, and the Americas.</string>
+    <string name="website_de_young_museum">https://deyoung.famsf.org/</string>
+    <string name="address_de_young_museum">Golden Gate Park, 50 Hagiwara Tea Garden Drive, San Francisco, CA 94118</string>
+    <string name="phone_de_young_museum">(415) 750–3600</string>
+
+    <string name="computer_history_museum">Computer History Museum</string>
+    <string name="description_computer_history_museum">The Computer History Museum is a remarkable hub that showcases the history of computers and continues to chronicle new advances in technology. If you are interested in technology, you will love the exhibits that await you. Find out how computers were invented and witness unique displays with fun topics like computer chess. If you are looking for an informative venue that is likely to interest kids as well as adults, keep this museum in mind. With changing exhibits, there is always something new and exciting to check out.</string>
+    <string name="website_computer_history_museum">http://www.computerhistory.org/</string>
+    <string name="address_computer_history_museum">1401 North Shoreline Boulevard, Mountain View, CA 94043</string>
+    <string name="phone_computer_history_museum">(650) 810–1010</string>
+
+    <string name="westfield_san_francisco_centre">Westfield San Francisco Centre</string>
+    <string name="description_westfield_san_francisco_centre">Find your favourite store and the newest shops for fashion, beauty, lifestyle and fresh food only at Westfield San Francisco Centre.</string>
+    <string name="website_westfield_san_francisco_centre">https://www.westfield.com/sanfrancisco</string>
+    <string name="address_westfield_san_francisco_centre">865 Market St, San Francisco, CA 94103</string>
+    <string name="phone_westfield_san_francisco_centre">(415) 512–6776</string>
+
+    <string name="stanford_shopping_center">Stanford Shopping Center</string>
+    <string name="description_stanford_shopping_center">Stanford Shopping Center is Northern California’s premier open-air shopping and dining destination with Bloomingdale’s, Macy’s, Nordstrom, Neiman Marcus, Wilkes Bashford and more than 140 world-class specialty stores, ranging from luxury brands to local favorites.  Enjoy an extraordinary mix of restaurants and cafes from Fleming’s Prime Steakhouse and Wine Bar, P.F. Chang’s China Bistro, Max’s Opera Café and The Melt, to Yucca de Lac and so many more. Shop the European Street Market for the freshest California produce and gourmet specialty foods.</string>
+    <string name="website_stanford_shopping_centere">https://www.westfield.com/sanfrancisco</string>
+    <string name="address_stanford_shopping_center">660 Stanford Shopping Center, Palo Alto, CA 94304</string>
+    <string name="phone_stanford_shopping_center">(650) 617–8202</string>
+
+    <string name="san_francisco_premium_outlets">San Francisco Premium Outlets</string>
+    <string name="description_san_francisco_premium_outlets">San Francisco Premium Outlets are located just 40 miles from downtown San Francisco in one of the oldest wine regions in California - the Livermore Valley. Visit over 180 iconic brands and designer names while enjoying beautiful weather in the state\'s largest outdoor outlet shopping mall.</string>
+    <string name="website_san_francisco_premium_outlets">http://www.premiumoutlets.com/outlet/san-francisco</string>
+    <string name="address_san_francisco_premium_outlets">2774 Livermore Outlets Dr, Livermore, CA 94551</string>
+    <string name="phone_san_francisco_premium_outlets">(925) 292–2868</string>
+    <string name="sight_location_and_contact_information">Location and Contact Information</string>
+
+</resources>
