@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.details.ProductDetailsActivity"
+    tools:showIn="@layout/activity_product_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:paddingTop="18dp">
+
+        <TextView
+            style="@style/CategoryLabelStyle"
+            android:text="@string/group_title_product" />
+
+        <ImageView
+            android:id="@+id/details_product_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            style="@style/FieldLabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price" />
+
+        <TextView
+            android:id="@+id/details_product_price"
+            style="@style/FieldValueStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@sample/products.json/data/price" />
+
+        <TextView
+            style="@style/FieldLabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/details_button_product_quantity_decrease"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="decreaseProductQuantity"
+                android:src="@drawable/ic_decrease" />
+
+            <TextView
+                android:id="@+id/details_product_quantity"
+                style="@style/FieldValueStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="12dp"
+                tools:text="@sample/products.json/data/quantity" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:onClick="increaseProductQuantity"
+                android:src="@drawable/ic_increase" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/CategoryLabelStyle"
+            android:text="@string/details_group_title_supplier" />
+
+        <TextView
+            style="@style/FieldLabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/details_supplier_name"
+            style="@style/FieldValueStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@sample/products.json/data/supplierName" />
+
+        <TextView
+            style="@style/FieldLabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/details_supplier_phone"
+                style="@style/FieldValueStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"
+                android:autoLink="phone"
+                tools:text="@sample/products.json/data/supplierPhoneNumber" />
+
+            <ImageButton
+                android:id="@+id/details_supplier_phone_image_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_phone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

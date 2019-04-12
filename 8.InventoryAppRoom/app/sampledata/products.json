@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "productName": "Skateboard",
+      "price": "$57.00",
+      "quantity": "3",
+      "supplierName": "Amazon",
+      "supplierPhoneNumber": "+1 (415) 123-4567"
+    },
+    {
+      "productName": "Pen",
+      "price": "$7.00",
+      "quantity": "1",
+      "supplierName": "Staples",
+      "supplierPhoneNumber": "+1 (400) 123-4567"
+    },
+    {
+      "productName": "Book",
+      "price": "$107.00",
+      "quantity": "30",
+      "supplierName": "Amazon Books",
+      "supplierPhoneNumber": "+1 (444) 123-4567"
+    },
+    {
+      "productName": "Toy",
+      "price": "$304.22",
+      "quantity": "1",
+      "supplierName": "Toys Co",
+      "supplierPhoneNumber": "+1 (415) 123-4567"
+    }
+  ]
+}
