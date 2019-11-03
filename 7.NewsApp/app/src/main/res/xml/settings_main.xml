@@ -1,0 +1,16 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings_title">
+
+    <EditTextPreference
+        android:defaultValue="@string/settings_news_topic_default"
+        android:inputType="text"
+        android:key="@string/settings_news_topic_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/settings_news_topic_label" />
+
+    <CheckBoxPreference
+        android:key="@string/settings_show_thumbnails_key"
+        android:title="@string/settings_show_thumbnails_label"
+        android:defaultValue="@bool/settings_show_thumbnails_default" />
+
+</PreferenceScreen>
