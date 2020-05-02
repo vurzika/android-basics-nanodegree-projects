@@ -31,6 +31,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.telephony.PhoneNumberFormattingTextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -40,7 +41,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.viktorija.inventoryapp.R;
-import com.viktorija.inventoryapp.database.ProductEntity;
+import com.viktorija.inventoryapp.datasources.database.ProductEntity;
 import com.viktorija.inventoryapp.utilities.ProductUtils;
 
 import butterknife.BindView;
@@ -117,7 +118,7 @@ public class ProductEditorActivity extends AppCompatActivity {
         productQuantityEditText.setOnTouchListener(mTouchListener);
         supplierNameEditText.setOnTouchListener(mTouchListener);
         supplierPhoneEditText.setOnTouchListener(mTouchListener);
-
+        supplierPhoneEditText.addTextChangedListener(new PhoneNumberFormattingTextWatcher());
 
         removeProductImageButton.setOnClickListener(v -> {
             setProductImageData(null);
@@ -175,7 +176,7 @@ public class ProductEditorActivity extends AppCompatActivity {
                 productPriceEditText.setText("");
             }
             if (selectedProduct.getProductQuantity() != null) {
-                productQuantityEditText.setText(selectedProduct.getProductQuantity());
+                productQuantityEditText.setText("" + selectedProduct.getProductQuantity());
             } else {
                 productQuantityEditText.setText("");
             }
@@ -386,14 +387,12 @@ public class ProductEditorActivity extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode,
                                            @NonNull String permissions[], @NonNull int[] grantResults) {
-        switch (requestCode) {
-            case PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE: {
-                // If request is cancelled, the result arrays are empty.
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // If permission was granted, do the
-                    selectPhotoFromGallery();
-                }
+        if (requestCode == PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE) {
+            // If request is cancelled, the result arrays are empty.
+            if (grantResults.length > 0
+                    && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // If permission was granted, do the
+                selectPhotoFromGallery();
             }
         }
     }
@@ -406,30 +405,31 @@ public class ProductEditorActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         // read request code to determine from which activity we are coming back
-        switch (requestCode) {
-            // returned from select image from gallery
-            case ACTION_SELECT_IMAGE_FROM_GALLERY:
-                // if was able to retrieve data, update photo
-                if (resultCode == RESULT_OK && data != null) {
-                    // read image data
-                    Uri selectedImage = data.getData();
+        // returned from select image from gallery
+        if (requestCode == ACTION_SELECT_IMAGE_FROM_GALLERY) {// if was able to retrieve data, update photo
+            if (resultCode == RESULT_OK && data != null) {
+                // read image data
+                Uri selectedImage = data.getData();
+                if (selectedImage != null) {
                     String[] filePathColumn = {MediaStore.Images.Media.DATA};
 
                     Cursor cursor = getContentResolver().query(selectedImage,
                             filePathColumn, null, null, null);
-                    cursor.moveToFirst();
+                    if (cursor != null) {
+                        cursor.moveToFirst();
 
-                    int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-                    String picturePath = cursor.getString(columnIndex);
-                    cursor.close();
+                        int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+                        String picturePath = cursor.getString(columnIndex);
+                        cursor.close();
 
-                    // update image in editor
-                    setProductImageData(ProductUtils.bitmapToBlob(BitmapFactory.decodeFile(picturePath)));
+                        // update image in editor
+                        setProductImageData(ProductUtils.bitmapToBlob(BitmapFactory.decodeFile(picturePath)));
 
-                    // marked item as changed
-                    productHasChanged = true;
+                        // marked item as changed
+                        productHasChanged = true;
+                    }
                 }
-                break;
+            }
         }
     }
 }

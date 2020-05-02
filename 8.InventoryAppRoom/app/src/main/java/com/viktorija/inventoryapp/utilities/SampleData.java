@@ -3,7 +3,7 @@ package com.viktorija.inventoryapp.utilities;
 import android.content.Context;
 
 import com.viktorija.inventoryapp.R;
-import com.viktorija.inventoryapp.database.ProductEntity;
+import com.viktorija.inventoryapp.datasources.database.ProductEntity;
 
 import java.util.ArrayList;
 import java.util.List;

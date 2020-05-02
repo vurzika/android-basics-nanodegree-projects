@@ -1,4 +1,4 @@
-package com.viktorija.inventoryapp.database;
+package com.viktorija.inventoryapp.datasources.database;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;

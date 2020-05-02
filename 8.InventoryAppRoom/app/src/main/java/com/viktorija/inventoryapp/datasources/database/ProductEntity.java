@@ -1,4 +1,4 @@
-package com.viktorija.inventoryapp.database;
+package com.viktorija.inventoryapp.datasources.database;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
@@ -53,7 +53,6 @@ public class ProductEntity {
     }
 
     // getters
-
 
     public int getId() {
         return id;

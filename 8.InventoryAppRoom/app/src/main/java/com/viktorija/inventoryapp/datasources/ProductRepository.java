@@ -1,7 +1,10 @@
-package com.viktorija.inventoryapp.database;
+package com.viktorija.inventoryapp.datasources;
 
 import android.arch.lifecycle.LiveData;
 import android.content.Context;
+
+import com.viktorija.inventoryapp.datasources.database.ProductDatabase;
+import com.viktorija.inventoryapp.datasources.database.ProductEntity;
 
 import java.util.List;
 import java.util.concurrent.Executor;

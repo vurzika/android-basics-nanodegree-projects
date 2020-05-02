@@ -20,7 +20,8 @@
             android:id="@+id/edit_product_image"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            tools:src="@tools:sample/avatars" />
+            tools:src="@tools:sample/avatars"
+            android:contentDescription="@string/product_image" />
 
         <Button
             android:id="@+id/button_remove_product_image"
@@ -40,7 +41,8 @@
             style="@style/FieldValueEditorStyle"
             android:hint="@string/hint_product_name"
             android:inputType="textCapWords"
-            tools:text="@sample/products.json/data/productName" />
+            tools:text="@sample/products.json/data/productName"
+            android:importantForAutofill="no" />
 
         <TextView
             style="@style/FieldLabelStyle"
@@ -53,7 +55,8 @@
             style="@style/FieldValueEditorStyle"
             android:hint="@string/hint_product_price"
             android:inputType="numberDecimal"
-            tools:text="@sample/products.json/data/price" />
+            tools:text="@sample/products.json/data/price"
+            android:importantForAutofill="no" />
 
         <TextView
             style="@style/FieldLabelStyle"
@@ -66,7 +69,8 @@
             style="@style/FieldValueEditorStyle"
             android:hint="@string/hint_product_quantity"
             android:inputType="number"
-            tools:text="@sample/products.json/data/quantity" />
+            tools:text="@sample/products.json/data/quantity"
+            android:importantForAutofill="no" />
 
         <TextView
             style="@style/CategoryLabelStyle"
@@ -83,7 +87,8 @@
             style="@style/FieldValueEditorStyle"
             android:hint="@string/hint_supplier_name"
             android:inputType="textCapWords"
-            tools:text="@sample/products.json/data/supplierName" />
+            tools:text="@sample/products.json/data/supplierName"
+            android:importantForAutofill="no" />
 
         <TextView
             style="@style/FieldLabelStyle"
@@ -95,8 +100,9 @@
             android:id="@+id/edit_supplier_phone_number"
             style="@style/FieldValueEditorStyle"
             android:hint="@string/hint_supplier_phone_number"
-            android:inputType="phone"
-            tools:text="@sample/products.json/data/supplierPhoneNumber" />
+            android:inputType="phone|number"
+            tools:text="@sample/products.json/data/supplierPhoneNumber"
+            android:importantForAutofill="no" />
 
     </LinearLayout>
 </ScrollView>

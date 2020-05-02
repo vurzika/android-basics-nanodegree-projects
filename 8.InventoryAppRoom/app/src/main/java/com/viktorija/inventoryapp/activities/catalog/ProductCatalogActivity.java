@@ -16,7 +16,7 @@ import android.widget.RelativeLayout;
 
 import com.viktorija.inventoryapp.R;
 import com.viktorija.inventoryapp.activities.editor.ProductEditorActivity;
-import com.viktorija.inventoryapp.database.ProductEntity;
+import com.viktorija.inventoryapp.datasources.database.ProductEntity;
 import com.viktorija.inventoryapp.utilities.SampleData;
 
 import java.util.ArrayList;

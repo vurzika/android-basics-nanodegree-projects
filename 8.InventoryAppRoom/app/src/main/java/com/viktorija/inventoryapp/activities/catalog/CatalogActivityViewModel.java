@@ -5,8 +5,8 @@ import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
 
-import com.viktorija.inventoryapp.database.ProductEntity;
-import com.viktorija.inventoryapp.database.ProductRepository;
+import com.viktorija.inventoryapp.datasources.database.ProductEntity;
+import com.viktorija.inventoryapp.datasources.ProductRepository;
 
 import java.util.List;
 

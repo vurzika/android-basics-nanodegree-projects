@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.viktorija.inventoryapp.R;
 import com.viktorija.inventoryapp.activities.details.ProductDetailsActivity;
-import com.viktorija.inventoryapp.database.ProductEntity;
+import com.viktorija.inventoryapp.datasources.database.ProductEntity;
 import com.viktorija.inventoryapp.utilities.ProductUtils;
 
 import java.util.List;

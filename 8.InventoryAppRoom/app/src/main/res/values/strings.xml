@@ -76,4 +76,5 @@
     <string name="error_product_name_required">Product requires a name</string>
     <string name="error_supplier_name_required">Product requires a supplier name</string>
     <string name="error_supplier_phone_number_required">Product requires a supplier phone number</string>
+    <string name="product_image">Product Image</string>
 </resources>
